@@ -19,14 +19,9 @@ def erasmus_task1(text):
 
 # Task-2 - encode the paragraph by shifting the position of each character by a variable value e.g. I am a boy (1) -> J bn b cpz
 # def erasmus_task2(text):
-#     encoding_list = string.ascii_letters+"a"
-#     encode_list = []
-#     for character in text:
-#         if character in encoding_list:
-#             encode_list.append(encoding_list[encoding_list.index(character)+1])
-#         else:
-#             encode_list.append(character)
-#     return "".join(encode_list)
+#     encoding = string.ascii_letters+"a"
+#     encoded_result = [encoding[encoding.index(i)+1] if i in encoding else i for i in text]
+#     return "".join(encoded_result)
 
 # Task-3 - Reverse the entire paragraph line by line e.g. I am a boy -> yob a ma I
 def erasmus_task3(text):
@@ -41,6 +36,6 @@ def erasmus_task3(text):
 if __name__ == "__main__":
 
     print(erasmus_task1(content))
-    #print(erasmus_task2(content.splitlines()[1]))
-    print(erasmus_task3(content.splitlines()[1]))
-    #print(erasmus_task4(content.splitlines()[1]))
+    #print(erasmus_task2(content))
+    print(erasmus_task3(content))
+    #print(erasmus_task4(content))
